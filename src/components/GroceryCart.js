@@ -55,7 +55,7 @@ const GroceryCart = ({
         {applesDiscount && (
           <tr>
             <td className="discountText" colSpan="3">
-              Apples discounted 10%
+              Apples discounted 10% (-10p)
             </td>
           </tr>
         )}
