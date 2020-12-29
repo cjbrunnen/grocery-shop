@@ -17,3 +17,8 @@
 #grocery-list {
   width: 40%;
 }
+
+.discountText {
+  font-size: 12px;
+  text-align: left;
+}
