@@ -16,3 +16,8 @@ export const GROCERY_ITEMS = [
       price: 1.0,
     },
   ];
+
+  export const SOUP = 'Soup'
+  export const BREAD = 'Bread'
+  export const APPLES = 'Apples'
+  export const MILK = 'Milk'

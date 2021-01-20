@@ -2,7 +2,7 @@ import "./App.css";
 import React, { useState, useEffect } from "react";
 import GroceryCart from "./components/GroceryCart";
 import GroceryItems from "./components/GroceryItems";
-import { GROCERY_ITEMS } from "./constants";
+import { GROCERY_ITEMS, SOUP, BREAD, APPLES, MILK } from "./constants";
 import { calcBreadDiscount, calcAppleDiscount, reducer } from "./utils";
 
 function App() {
@@ -36,10 +36,10 @@ function App() {
 
   function calculateTotal() {
     const byItemName = (name) => (item) => item.name === name;
-    const soups = cart.filter(byItemName("Soup"));
-    const breads = cart.filter(byItemName("Bread"));
-    const apples = cart.filter(byItemName("Apples"));
-    const milk = cart.filter(byItemName("Milk"));
+    const soups = cart.filter(byItemName(SOUP));
+    const breads = cart.filter(byItemName(BREAD));
+    const apples = cart.filter(byItemName(APPLES));
+    const milk = cart.filter(byItemName(MILK));
 
     const breadTotal = calcBreadDiscount(soups, breads);
     const applesTotal = calcAppleDiscount(apples, 10);
