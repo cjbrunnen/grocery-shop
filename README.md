@@ -1,4 +1,4 @@
-# Shopping Cart using React & Material-UI
+# Shopping Cart using React
 
 ![Items list with items in cart](app-screenshot.png)
 
